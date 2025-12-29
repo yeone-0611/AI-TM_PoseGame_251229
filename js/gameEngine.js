@@ -11,7 +11,7 @@ class GameEngine {
   constructor() {
     this.score = 0;
     this.level = 1;
-    this.timeLimit = 60;
+    this.timeLimit = 15;
     this.isGameActive = false;
     this.gameTimer = null;
     this.loopId = null;
@@ -21,7 +21,7 @@ class GameEngine {
     this.items = []; // 낙하 중인 아이템들
     this.spawnRate = 60; // 아이템 생성 주기 (프레임 단위)
     this.frameCount = 0;
-    this.baseSpeed = 2; // 기본 낙하 속도 (3 -> 2로 감소)
+    this.baseSpeed = 1; // 기본 낙하 속도 (2 -> 1로 감소)
 
     // 아이템 정의
     this.itemTypes = [
@@ -54,7 +54,7 @@ class GameEngine {
     this.isGameActive = true;
     this.score = 0;
     this.level = 1;
-    this.timeLimit = 60;
+    this.timeLimit = 15;
     this.items = [];
     this.basketPosition = "정면";
     this.frameCount = 0;
